@@ -1,0 +1,141 @@
+.OTT__body {
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  margin: 16px 0px !important;
+  padding: 0px !important;
+}
+.rect {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-evenly; */
+  /* flex: 1; */
+  width: 200px;
+  height: 8px;
+  background: #dadee2;
+  border-radius: 2px;
+}
+
+.rect__rightFill {
+  position: absolute;
+  width: 70px;
+  height: 8px;
+  top: 5.5px;
+  left: 184px;
+  background-image: linear-gradient(to right, #56a7ff, #007aff);
+  opacity: 1;
+  border-radius: 0px 2px 2px 0px;
+  -webkit-animation: rect-bar 2s;
+  -moz-animation: rect-bar 2s;
+  animation: rect-bar 2s;
+}
+
+.rect__leftFill {
+  position: absolute;
+  width: 70px;
+  height: 8px;
+  background-image: linear-gradient(to left, #56a7ff, #007aff);
+  opacity: 1;
+  float: right;
+  top: 5.5px;
+  right: 166px;
+  border-radius: 2px 0px 0px 2px;
+  -webkit-animation: rect-bar 2s;
+  -moz-animation: rect-bar 2s;
+  animation: rect-bar 2s;
+}
+
+.line__mone {
+  width: 25px;
+  margin-left: 12px;
+  height: 0px;
+  background: white;
+  border: 1px solid #ffffff;
+  transform: rotate(90deg);
+}
+.line__mtwo {
+  width: 25px;
+  height: 0px;
+  background: white;
+  border: 1px solid #ffffff;
+  transform: rotate(90deg);
+}
+
+.line__mthree {
+  width: 25px;
+  height: 0px;
+  background: white;
+  border: 1px solid #ffffff;
+  transform: rotate(90deg);
+}
+
+.mid__line {
+  width: 12px;
+  height: 0px;
+  margin-top: 3px;
+  background: black;
+  border: 1px solid #000000;
+  transform: rotate(90deg);
+}
+
+.line__one {
+  width: 25px;
+  height: 0px;
+  background: white;
+  border: 1px solid #ffffff;
+  transform: rotate(90deg);
+}
+
+.line__two {
+  width: 25px;
+  height: 0px;
+  background: white;
+  border: 1px solid #ffffff;
+  transform: rotate(90deg);
+}
+
+.line__three {
+  margin-right: 12px;
+  width: 25px;
+  height: 0px;
+  background: white;
+  border: 1px solid #ffffff;
+  transform: rotate(90deg);
+}
+
+/* sg left graph title */
+.graph__title {
+  margin-right: 8px;
+  color: #001521;
+  font-size: medium;
+  font-weight: 550;
+  text-align: right;
+}
+
+/* sg right nums */
+.graph__num {
+  width: 37px;
+  margin-left: 8px;
+  color: #001521;
+  font-size: medium;
+  font-weight: 550;
+  text-align: right;
+}
+
+/* animations */
+@-webkit-keyframes rect-bar {
+  0% {
+    width: 0;
+  }
+}
+@-moz-keyframes rect-bar {
+  0% {
+    width: 0;
+  }
+}
+@keyframes rect-bar {
+  0% {
+    width: 0;
+  }
+}

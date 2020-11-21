@@ -1,0 +1,154 @@
+OTT.CSS FILE ::
+
+
+/* .rect:hover {
+  width: 47px;
+  height: 8px;
+  background: #007aff;
+  border-radius: 0px 2px 2px 0px;
+} */
+
+/* .graph {
+  display: flex;
+}
+
+.svg__body {
+  flex: 1;
+}
+
+.rect__fill {
+  position: absolute;
+  width: 47px;
+  height: 8px;
+  left: 219px;
+  top: 185px;
+  background: #007aff;
+  border-radius: 0px 2px 2px 0px;
+} */
+
+/////////////////////////////////////////////////////////////////////////////
+
+OTTGRAPH.JS FILE :: 
+
+{/* <div className="graph">
+        <div className="rect__fill"></div>
+            <svg className="svg__body" width="207" height="15" viewBox="0 0 207 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="OTT">
+                <path id="rect__one" d="M0 6C0 4.89543 0.89543 4 2 4H25V12H2C0.89543 12 0 11.1046 0 10V6Z" fill="#DADEE2"/>
+                <rect id="rect__two" x="26" y="4" width="25" height="8" fill="#DADEE2"/>
+                <rect id="rect__three" x="52" y="4" width="25" height="8" fill="#DADEE2"/>
+                <rect id="rect__six" x="130" y="4" width="25" height="8" fill="#DADEE2"/>
+                <rect id="rect__seven" x="156" y="4" width="25" height="8" fill="#DADEE2"/>
+                <path id="rect__eight" d="M182 4H205C206.105 4 207 4.89543 207 6V10C207 11.1046 206.105 12 205 12H182V4Z" fill="#DADEE2"/>
+                <rect id="rect__four" x="78" y="4" width="25" height="8" fill="#DADEE2"/>
+                <rect id="rect__five" x="104" y="4" width="25" height="8" fill="#DADEE2"/>
+                <line id="mid__line" x1="103" y1="15" x2="103" stroke="black" stroke-width="3"/>
+                </g>
+            </svg>  
+    </div> */}
+
+
+///////////////////////////////////////////////
+destructing ::
+{players.map(player => 
+                <ul>{player.SGCategories.map((SG, K) => {
+                   return  Object.entries(SG).map(C => {
+                         return <li>{C}</li>
+                    })
+                })}</ul>
+)}
+        
+// json data destructing
+const {1: {SGCategories: [{"avg-SG-per-round":normal_one}]}} = players;
+const {1: {SGCategories: [{SG_Category_Detail}]}} = players;
+console.log(normal_one, SG_Category_Detail);
+
+
+////////////////////////
+style('stroke-dasharray', d => `${d}, 100` );
+{`${quality}, 100`} 
+
+???????????????
+
+${show && "rect__leftFill"}
+
+
+???????????????????????????????????
+
+var selectPos = selectAll('.rect__rightFill').data([positive]);
+        var selectNeg = selectAll(`${category} rect__leftFill`).data([negative]);
+
+        selectPos.classed('rect__leftFill', false)
+            .style('width', function(d, i) {
+                    if(Math.ceil(Math.abs(d)*25) <= 100){
+                        return Math.ceil(Math.abs(d)*25) + 'px';
+                    }else{
+                        return '100px';
+                    }
+
+            })
+
+        selectNeg.classed('rect__rightFill', false)
+            .style('width', function(d, i) {
+                if(Math.ceil(Math.abs(d)*25) <= 100){
+                    return Math.ceil(Math.abs(d)*25) + 'px';
+                }else{
+                    return '100px';
+                }
+
+        })
+??????????????????????????????????????????????????????
+
+<div className={`rect__leftFill ${show && "rect__rightFill"}`}></div>
+
+function(d, i) {
+                        if(Math.ceil(Math.abs(d)*25) <= 100){
+                            return Math.ceil(Math.abs(d)*25) + 'px';
+                        }else{
+                            return '100px';
+                        }
+                }
+
+
+>>>>>>>>>>>>>>>>>>>>>>>
+progress loading ::
+card__container >> width height color border 
+header__area
+graph__area
+activity__area
+footer__area
+>>>>>>>>>>>>>>>>>>>>>>>>>>
+style={{width: `${data*25}px`}}
+style={{width: `${data*25}px`}}
+
+
+style={show === false ? {width: `${positive*25}px`} : {width: `${negative*25}px`}}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// }else if(Math.sign(demo) === -1){
+        //     // console.log('neg', demo);
+        //     // select(`.${category}`).data([demo])
+        //     //     .classed('rect__leftFill', true)
+        //     //     .style('width', function(d, i) {return Math.ceil(Math.abs(d)*25) + 'px'});
+        //     negative.push(demo);
+        // }
+        // var right = d3.selectAll('.rect__leftFill').data([negative])
+        //     .classed("rect__leftFill", true)
+        //     .attr('width', function(d, i) {
+        //             if(Math.ceil(Math.abs(d)*25) <= 100){
+        //                 return Math.ceil(Math.abs(d)*25) + 'px';
+        //             }else{
+        //                 return '100px';
+        //             }
+        // })
+        
+        // var left = d3.selectAll('.rect__rightFill').data([positive])
+        //     .classed('rect__rightFill', true)
+        //     .attr('width', function(d, i) {
+        //             if(Math.ceil(Math.abs(d)*25) <= 100){
+        //                 return Math.ceil(Math.abs(d)*25) + 'px';
+        //             }else{
+        //                 return '100px';
+        //             }
+
+        // })
+ ????????????????????????????????????????????????

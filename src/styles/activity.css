@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+.activity__body {
+  font-family: "Roboto", sans-serif;
+  margin: 14px 0px !important;
+}
+
+.activity__title {
+  color: #46555f;
+}
+
+.activity {
+  font-size: normal;
+  font-weight: 550;
+  color: #001521;
+}

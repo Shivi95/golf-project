@@ -1,0 +1,83 @@
+.skeleton__container {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border: 2px solid #c0c6cb;
+  transition: 0.3s;
+  width: 348px;
+  height: 508px;
+  margin: 20px auto;
+  padding: 18px;
+  border-radius: 8px;
+}
+
+.header__area {
+  margin: 10px;
+}
+.avatar {
+  float: left;
+  width: 75px;
+  height: 75px;
+  border-radius: 70%;
+  background-color: #e6e8eb;
+  animation: fadeOut ease-out infinite 1s;
+}
+.name,
+.location {
+  float: right;
+  width: 190px;
+  height: 15px;
+  background-color: #e6e8eb;
+  margin: 5px 30px;
+  animation: fadeOut ease-out infinite 1s;
+}
+
+.city {
+  float: left;
+  width: 120px;
+  height: 15px;
+  background-color: #e6e8eb;
+  margin: 5px 33px;
+  animation: fadeOut ease-out infinite 1s;
+}
+
+.graph__area {
+  width: 335px;
+  height: 130px;
+  background-color: #e6e8eb;
+  margin: 16px 8px;
+  transform: translate(0px, 115px);
+  animation: fadeOut ease-out infinite 1s;
+}
+
+.activity__area {
+  width: 335px;
+  height: 25px;
+  background-color: #e6e8eb;
+  margin: 20px 8px;
+  transform: translate(0px, 115px);
+  animation: fadeOut ease-out infinite 1s;
+}
+
+.footer__area {
+  width: 335px;
+  height: 180px;
+  background-color: #e6e8eb;
+  margin: 16px 8px;
+  transform: translate(0px, 115px);
+  animation: fadeOut ease-out infinite 1s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0.2;
+  }
+  35% {
+    opacity: 0.5;
+  }
+  55% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
