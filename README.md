@@ -17,7 +17,7 @@ In the project directory,
 
 ## Tasks Completed
 
-`Animations`
+### Animations
 
 ```bash
 Progressive Loading.
@@ -26,7 +26,7 @@ Quality Circle Progress.
 Ott Graph Progress.
 ```
 
-`ES6 Destructing JSON Data`
+### ES6 Destructing JSON Data
 
 ```bash
 <OttGraph category={sg.SG_Category_Detail}
@@ -35,13 +35,13 @@ Ott Graph Progress.
 />
 ```
 
-`Context API`
+### Context API
 
 ```bash
 import { StateContext } from './provider/StateProvider';
 ```
 
-`OTT Graph title & SG numbers Format`
+### OTT Graph title & SG numbers Format
 
 ```bash
 Title Name `SG__TEE` has changed to `SG OTT`.
@@ -60,6 +60,12 @@ Since D3.js data Visualization framework was new for me. I have done only a litt
 ```bash
 import { selectAll } from "d3-selection";
 ```
+
+## Wanted to know more about
+
+- profile picture
+- card location
+- latest activity
 
 ## License
 
