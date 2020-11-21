@@ -1,7 +1,7 @@
 # Golf Player Card APP
 
 Developed a Golf Player Card using React and D3.js Frameworks.
-This application is deployed using Google Firebase Database [Player-Card-App](firebase link).
+This application is deployed using netlify [Player-Card-App](https://quirky-benz-497a02.netlify.app).
 
 ## ScreenShots
 
